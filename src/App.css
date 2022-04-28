@@ -1,38 +1,70 @@
 .App {
   text-align: center;
+  font-family: sans-serif;
+  padding: 10px 10px;
+  width: 75vw;
+  margin: 0% auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input {
+  width: 40%;
+  height: 50px;
+  background-color: #f7efef;
+  border-radius: 10px;
+  border: 0px;
+  text-align: center;
+  padding: 20px 20px;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input:hover {
+  cursor: text;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.search {
+  margin-bottom: 40px;
+}
+
+.emoji-list {
+  width: 80%;
+  margin: 0% auto;
+  font-size: 25px;
+  margin-bottom: 20px;
+  text-align: left;
+  padding: 10px 10px;
+  background-color: rgb(245, 245, 245);
+  border-radius: 5px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.emoji-list:hover {
+  background-color: #f7efef;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+span {
+  margin-right: 10px;
+}
+
+.hide {
+  display: none;
+}
+
+.emoji-list:hover > .hide {
+  display: inherit;
+  font-size: 16px;
+}
+
+@media (max-width: 500px) {
+  .App {
+    width: 90vw;
   }
-  to {
-    transform: rotate(360deg);
+  input {
+    width: 90%;
+  }
+  .emoji-list {
+    font-size: 16px;
   }
 }
